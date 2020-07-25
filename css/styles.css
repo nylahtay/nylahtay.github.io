@@ -3,12 +3,19 @@ html, body {
   height:100%;
   width:100%;
   padding:0;
+  background-color: black;
 }
 
+body {
+  font-size: 20px;
+}
 
+img {max-width: 100%;}
 h1 {
   font-size: 7.51vw;
   font-family: 'Kanit', cursive;
+  color: rgba(0, 0, 0, 0.88);
+  text-shadow: 1px 1px 11px #FFF;
 }
 h2 {
   font-size: 3.51vw;
@@ -18,11 +25,14 @@ h2 {
 section {
   display: block;
   box-sizing:border-box;
+  background: white;
 }
 
 section.full {
   height:100%;
   width:100%;
+  background-size: cover;
+  background-position: center;
 }
 
 section > .inner, footer > .inner {
@@ -38,6 +48,8 @@ section.thi { background: #345029}
 
 footer {
   text-align: center;
+  background-color: #1a1a1a;
+  color: white;
 }
 footer nav {
   margin: 2rem 0;
@@ -49,7 +61,7 @@ footer nav a {
 }
 
 #resume section.tech {
-  background: grey;
+  background: #d2d2d2;
 }
 #resume section.tech .inner,
 #resume section.work .inner
@@ -74,11 +86,56 @@ footer nav a {
   display: grid;
   grid-gap: 0;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 3rem 2fr;
   grid-auto-flow: column;
 }
-
-
+#resume section.header {
+  background-image: url('../img/coding-laptop-1.jpg');
+  background-blend-mode: luminosity;
+}
+#about section.header {
+  background-image: url('../img/willow-laptop.jpg');
+}
+#about section.stats {
+  background: #d2d2d2;
+}
+#about section.stats .inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#about section.stats .inner > * {
+  flex-basis: 50%;
+  margin: 2rem;
+}
+#about section.instagram .inner {
+  padding: 0;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#about section.instagram {
+  padding-bottom: 5vh;
+}
+#about section.instagram > .inner > div {
+  overflow: hidden;
+  max-height: 33.33vw;
+}
+#about section.instagram img {
+  width: 100%;
+}
+#about section.instagram .instagram-link {
+  text-align: center;
+  padding: 2rem 6vw;;
+}
+#about img.profile {
+  width: 100%;
+  max-width: 400px;
+  border-radius:50%;
+  padding: 1rem;
+  margin:2rem auto;
+  text-align: center;
+  display: block;
+}
 
 /*
 #resume section.tech div.content h3:nth-child(odd) {float: left;}
@@ -95,5 +152,20 @@ footer nav p { font-size: .8em; }
   h3 {      font-size: 5vw;  }
   footer nav a {
     font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+  #about section.stats .inner {
+    display: block;
+  }
+  #about section.instagram .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  #about section.instagram > .inner > div {
+    overflow: hidden;
+    max-height: 50vw;
   }
 }
