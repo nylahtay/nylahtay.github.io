@@ -60,6 +60,18 @@ footer nav a {
   font-size: 1.5vw;
 }
 
+
+#home section.profile .title {
+  background: black;
+  width: fit-content;
+  position: relative;
+  top: 7rem;
+  left: 3rem;
+  color: white;
+  padding: 4rem;
+  opacity: .75;
+}
+
 #resume section.tech {
   background: #d2d2d2;
 }
@@ -88,6 +100,10 @@ footer nav a {
   grid-template-columns: 50% 50%;
   grid-template-rows: 3rem 2fr;
   grid-auto-flow: column;
+}
+#home section.header {
+  background-image: url('../img/laptop-background.jpg');
+  background-blend-mode: luminosity;
 }
 #resume section.header {
   background-image: url('../img/coding-laptop-1.jpg');
@@ -167,5 +183,11 @@ footer nav p { font-size: .8em; }
   #about section.instagram > .inner > div {
     overflow: hidden;
     max-height: 50vw;
+  }
+
+  #home section.profile .title {
+    top: 5rem;
+    left: 1rem;
+    padding: 1rem;
   }
 }
