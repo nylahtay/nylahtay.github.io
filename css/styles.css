@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  height:100%;
+  width:100%;
+  padding:0;
+}
+
+
+h1 {
+  font-size: 7.51vw;
+  font-family: 'Kanit', cursive;
+}
+h2 {
+  font-size: 3.51vw;
+  font-family: 'Kanit', cursive;
+}
+
+section {
+  display: block;
+  box-sizing:border-box;
+}
+
+section.full {
+  height:100%;
+  width:100%;
+}
+
+section > .inner, footer > .inner {
+  width: 100%;
+  padding: 10vh 6vw;
+}
+section > .inner.splash {
+  padding: 20vh 6vw;
+}
+
+section.sec {background: darkblue;}
+section.thi { background: #345029}
+
+footer {
+  text-align: center;
+}
+footer nav {
+  margin: 2rem 0;
+}
+footer nav a {
+  text-transform:uppercase;
+  margin: 1rem .25rem;
+  font-size: 1.5vw;
+}
+
+#resume section.tech {
+  background: grey;
+}
+#resume section.tech .inner,
+#resume section.work .inner
+ {
+  display: flex;
+  flex-wrap: wrap;
+}
+#resume section.tech h2,
+#resume section.work h2
+ {
+  flex: 1 1 33%;
+  margin: 1rem 0;
+}
+#resume section.tech div.content,
+#resume section.work div.content
+ {
+  flex: 1 1 66%;
+  margin: 1rem 0;
+}
+
+#resume section.tech div.content.grid {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 2fr;
+  grid-auto-flow: column;
+}
+
+
+
+/*
+#resume section.tech div.content h3:nth-child(odd) {float: left;}
+#resume section.tech div.content h3:nth-child(even) {float: right;}
+#resume section.tech div.content ul:nth-child(odd) {float: left;}
+#resume section.tech div.content ul:nth-child(even) {float: right;}
+*/
+
+
+footer nav p { font-size: .8em; }
+@media only screen and (max-width: 768px){
+  h1 {      font-size: 10vw;  }
+  h2 {      font-size: 8vw;  }
+  h3 {      font-size: 5vw;  }
+  footer nav a {
+    font-size: 2.5vw;
+  }
+}
