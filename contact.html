@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
+<html lang="en" id="contact">
 
 <head>
   <!--
@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/icon.jp" type="image/jpeg"/>
-  <title>Nylah Tay</title>
+  <title>About | Nylah Tay</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -30,7 +30,7 @@
         <li class="nav-item">
           <a class="nav-link" href="resume.html">Resume</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
@@ -41,18 +41,51 @@
   </nav>
   <section class="header full">
     <div class="inner splash">
-      <h1>Nylah Tay</h1>
-      <h1>Rogers</h1>
-      <p>Programmer, Web Developer, Piano teacher, martial arts instructor, friend and so much more.</p>
-      <a class="btn btn-primary" href="contact.html" role="button">Let's Make Something Together</a>
+      <h1>Lets make something<br> together.</h1>
     </div>
   </section>
-
-  <section class="profile">
+  <section class="consulting">
     <div class="inner">
-      <div class="title"><h2>My Passion and Personality</h2></div>
-      <div class="profile-img"><img src="img/nylah-profile.jpg" class="profile" alt=""></div>
-      <p>Nylah is a programmer that prides herself in bringing her best self to each project she works on. She is passionate about her work and commited to giving you her best. Always learning, Nylah strives to be better every day, working on her skills and abilities. She loves to teach and is always a great resource for consulting.</p>
+      <h3>Consulting</h3>
+      <p>Please fill out the form below and we'll get in touch shortly.</p>
+      <form>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" value="First" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Last" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault03" value="City" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <select class="custom-select" id="validationDefault04" required>
+              <option selected disabled value="">State...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip</label>
+            <input type="text" class="form-control" id="validationDefault05" value="Zip" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
     </div>
   </section>
 
